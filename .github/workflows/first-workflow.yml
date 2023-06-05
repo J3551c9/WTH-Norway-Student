@@ -12,6 +12,7 @@ on:
 jobs:
   # This workflow contains a single job called "greet"
   Job1:
+    name: Job 1
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -22,7 +23,11 @@ jobs:
       run: echo "Step one"
     - name: Step two
       run: echo "Step two"
-   Job2:
+  
+  Job2:
+    name: Job 2
+    runs-on: ubuntu-latest
+    steps:
     - name: Cowsays
       # You may pin to the exact commit or the version.
       # uses: mscoutermarsh/cowsays-action@822c8424f7ebc1f4c8b86b0bcb11e4051b7f42e2
